@@ -5,7 +5,7 @@
     --clr-accent-400:hsl(142, 90%,  61%);
   }
  
-  
+  @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Sail&display=swap');
 
 /* *::before,
 *::after{
@@ -14,6 +14,7 @@
 */
 
 *{
+    
     box-sizing: border-box;
 }
 
@@ -22,20 +23,25 @@ body{
     padding: 0;
     min-height:100vh;
     background-color: #F3cbc9;
-    font-family:sans-serif;
+    font-family: 'Sail', cursive;
+     
+    
 }
 .container{
+   
     background-image: url(bg/hero.jpg);
     height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
     display:flex;
+  
     
     
 }
 
 .inner{
+    margin:0 auto;
     width:100%;
     text-align: center;
     justify-content: center;
@@ -47,27 +53,26 @@ body{
 
 h1{
     font-size: 7em;
+   
     
 }
 
 nav{
+    margin-bottom:4em;
+    position:fixed;
     top:0px;
     right:0px;
+    padding:15px 19px;
     width:100%;
-    text-align: right;
-   
-    position:fixed;
-    padding:.5rem .75rem;
-
-}
-nav a{
-    color:#62353d;
     background-color:antiquewhite;
-    margin: 0.5em;
-    padding: 1em;
-    border-radius:0.25em;
+    text-align:right;
+}
+
+nav a{
     text-decoration: none;
-  
+    color:#62353d;
+    margin:.75rem;
+    
 }
 
 section{
@@ -138,7 +143,7 @@ section{
   
   
   
-  .card:hover .card-content > *not(.card-title),
+  .card:hover .card-content > * not(.card-title),
   .card:focus-within .card-content{
     opacity:1;
     transition-delay:1000ms; }
@@ -201,23 +206,23 @@ section{
     background-color:antiquewhite;
   }
 
-
+h1,h2, footer{
+    font-family: 'Sigmar One', cursive;;
+}
 
   .mobile{
     background-color: antiquewhite;
   }
 
   .desktop{
-     opacity:0.5;
-     font-size: .75rem;
+     opacity:0.3;
+     font-size: 1.2rem;
   }
   
   
   @media all and (min-width:769px){
    
-    nav{
-        width:90%;
-    }
+    
     .mobile{
      display:none;
     }
