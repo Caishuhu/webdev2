@@ -15,28 +15,23 @@
 
 
     <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-
-            max-width:40rem;
-            margin: 0 auto;
-            padding:0;
-        }
-
-     .contain{display: block;
-        margin-top: 8rem;
-        padding:1.25rem;
+    
+     
+     .contain{
+        display: block;
+      
+        padding:2rem;
         color:#62302F;
         background-color:#cf7c71 ;
+        line-height:1;
+        margin:5rem;
      }
 
       section{
         
         display:flex ;
        flex-wrap: wrap;
-       justify-content:space-between;
+       justify-content:space-around;
 
        justify-items: center;
        align-items: center;
@@ -47,11 +42,11 @@
       
       h1{
       margin-top: .5rem;
-      font-size: 5rem;
+      font-size: 3rem;
        text-align: center;
 
       }
-      h2{
+      .top p, .bottom p{
         text-decoration:overline;
         text-decoration-color: antiquewhite;
         text-decoration-style: solid;
@@ -69,18 +64,10 @@
         margin-top: 0;
       }
 
-      .logo{
-        position:fixed;
-        top:0px;
-       left:0px;
-       padding-left:20px;
-       color:#62353d;
-   
-      }
 
       footer{
         background-color:bisque;
-        margin-top:9rem;
+        margin-top:3rem;
         margin-bottom: 0;
         
         
@@ -94,32 +81,31 @@
     </style>
 
     <body>
-        <nav>
-            <p class="logo">BUDAPE</p>
-            <a href="index.html">Home</a>
-            <a href="ourstory.html">Our Story</a>
-            <a href="hours.html">Hours</a>
-            <a href="dinner.html">Dinner</a>
-            <a href="drink.html">Drink</a>
-            <a href="event.html">Events</a>
-            <a href="reservation.html">Reservation</a>
-           </nav>
+      <nav class="topbar">
+        <a href="index.html">Home</a>
+        <a href="ourstory.html">Our Story</a>
+        <a href="hours.html">Hours</a>
+        <a href="gelato.html">Gelato</a>
+        <a href="chuanchuan.html">Chuanchuan</a>
+        <a href="event.html">Events</a>
+        <a href="reservation.html">Reservation</a>
+       </nav>
         
         <div class="contain">
       <h3>ONLINE RESERVATION</h3>
       <h1>Book A Table</h1>
      
         <section class="top">
-        <h2>1 Person   (PERSON)</h2> 
-        <h2>02/17/2023 (DATE)</h2>
-        <h2>5:30PM to 8:30PM</h2>
+        <p>1 Person   (PERSON)</p> 
+        <p>02/17/2023 (DATE)</p>
+        <p>5:30PM to 8:30PM</p>
        
         
         </section>
         <section class="bottom">
-        <h2>---Your Name---</h2>
-        <h2>---Email---</h2>
-        <h2>Phone</h2>
+        <p>---Your Name---</p>
+        <p>---Email---</p>
+        <p>Phone</p>
         </section>
         
     </div>
@@ -132,3 +118,5 @@
     </div>
     </footer>
     </body>
+
+    </html>
