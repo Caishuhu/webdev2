@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Tilt+Prism&display=swap');
+
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+scroll-behavior: smooth;
+font-size: 1em;
+line-height: 1.25em;
+}
+
+
+body{
+   background-image: url(collect/fabric.jpeg);
+   background-repeat: repeat;
+   background-position: center;
+}
+
+
+figcaption{
+    color:#EED6D3;
+    
+}
+
+main p, h2{
+    color:#EED6D3;
+    font-family: 'Genos', sans-serif ;
+}
+
+
+
+h1{
+
+    margin:0;
+    padding:1.5rem;
+    color:#E8E8E0;
+    background-color: #67595E;
+    font-family: 'Tilt Prism', cursive;
+}
+
+h2{
+   
+   
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+    animation:move 5s alternate infinite;
+   
+}
+
+@keyframes move {
+   from{
+    color: #eed6d3;
+
+       }
+
+   to{
+    color:lightsalmon;
+   }
+}
+
+
+
+
+ .ghost {
+    
+    position: fixed;
+    margin-top:0;
+    right:50px;
+    top:0;
+    text-align: center;
+    cursor: pointer;
+    animation: movement 5s alternate infinite  ;
+    
+}
+
+@keyframes movement{
+   0%{
+        transform: translateY(1000px);
+        transition-delay: 4s;
+}
+
+   100%{
+    transform: translateY(200px);
+   }
+}
+
+.ghost img{
+    max-width: 220px;
+    max-height: 150px;
+}
+
+
+
+ .emi {
+    position:fixed ;
+    left:20px;
+   
+    
+}
+
+.emi figcaption{
+    padding: 3px;
+    text-align: center;
+}
+
+.emi img:hover{
+   cursor:pointer;
+   transform: scale(1.5);
+   
+}
+
+
+ 
+
+
+p{
+    
+    text-align: center;
+  
+    
+}
+
+
+.part{
+   
+    
+    animation:disappear 5s 3 ease-out;
+   
+}
+
+ @keyframes disappear{
+   0%{
+    
+      opacity:1;
+       transform: rotate(0deg) scale(1);
+       
+   }
+
+
+   40%{
+    opacity:1;
+    transform: rotate(0deg) scale(1.75);
+    
+}
+
+    
+   70%{
+      opacity:0;
+      transform:rotate(360deg) scale(-1);
+   }
+
+
+   100%{
+    opacity:1;
+       transform: rotate(0deg) scale(1);
+       
+   }
+}
+
+
+
+footer{
+    position: fixed;
+    
+    bottom:0;
+    color:#E8E8E0;
+    background-color:#67595E;
+    padding: .75rem;
+    opacity: .85;
+    font-size:15px;
+    font-family: 'Tilt Prism', cursive;
+     
+}
+
+ #disclaimer :hover{
+    cursor:pointer;
+    background-color:coral;
+   
+    transition:background-color 1.5s ease-out;
+}
