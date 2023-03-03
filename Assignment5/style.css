@@ -1,0 +1,80 @@
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+
+body{
+    background-color: #5353a0;
+}
+
+
+h1{
+    margin-top: 90px;
+    text-align: center;
+    font-family:forTheTitle ;
+    font-size: 90px;
+    color: #ffffff;
+}
+
+button{
+   margin:0 auto;
+   display: block;
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 5px;
+   padding: 10px;
+   color:#ffffff;
+   background-color: #242466;
+   border-style: none;
+   border-radius: 8px;
+    font-family: forTheTitle;
+    font-size: 25px;
+}
+
+button:hover{
+    background-color: #469ed6;
+}
+main{
+    margin:20px;
+    border-style: solid;
+    border-color:#469ed6 ;
+    
+}
+
+nav{
+    border-style:dashed;
+    margin: 20px;
+    padding: 50px;
+}
+
+figure img{
+   max-width: 100%;
+}
+
+footer{
+    
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+
+@font-face {
+    font-family: forTheTitle;
+    src: url(amatic/Amatic-Bold.ttf);
+}
+
+
+
+@media all and (min-width: 769px) {
+
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+
+}

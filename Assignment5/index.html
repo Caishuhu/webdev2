@@ -1,0 +1,132 @@
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Assignment 5</title>
+	
+	<link rel="stylesheet" href="style.css">	
+	
+</head>
+
+
+<body>
+
+<div id="container">
+<header>
+    <h1>MOVING PARTS</h1>
+</header>
+
+
+<main>
+   
+      <button id="start">BACKGROUND</button>
+      <button id="part1">WHO KNOWS</button>
+      <button id="part2" >YOYO</button>
+      <button id="part3" >SHH</button>
+      <button id="part4" >YAY</button>
+
+      <nav class="bg">
+
+      <figure>
+        <img class="cream" src="img5/cream.png" alt="ice cream">
+      </figure>
+     
+      <figure>
+        <img class="ball" src="img5/starball.png" alt="starball">
+      </figure>
+     
+      <figure>
+        <img class="boy" src="img5/starboy.png" alt="starboy">
+      </figure>
+
+       
+      <figure>
+        <img class="moon" src="img5/moon.png" alt="moon">
+      </figure>
+      </nav>
+     
+    <CLOSE>
+   
+
+
+
+
+
+    </div>
+
+
+</main>
+
+<footer>
+    <button id="close">OOPS...</button>
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+    
+
+ $('nav.bg').hide();
+   $('button#start').click(function(){
+     $('nav.bg').show().css('background','black');
+   });
+
+     $('img.cream').hide();
+    
+    $('button#part1').click(function(){
+        $('img.cream').show(1500).animate({rotate:'45deg',
+    translate:'+=200px'})
+
+    });
+
+   
+    $('img.ball').hide();
+    
+    $('button#part2').click(function(){
+        $('img.ball').show().animate({
+            translate:'-=100px',
+           rotate:'360deg'},3000);
+
+    });
+
+    $('img.boy').hide();
+    
+    $('button#part3').click(function(){
+        $('img.boy').show().animate({
+            translate:'-=100px',
+           rotate:'360deg'},2000);
+
+    });
+    
+    $('img.moon').hide();
+    
+    $('button#part4').click(function(){
+        $('img.moon').show()
+        .animate({
+            translate:'+=100px',
+           rotate:'360deg'},3000);
+
+    });
+    
+    $('button#close').click(function(){
+        $('nav.bg').toggle(1500);
+    });
+
+
+    
+    
+    }); //close .ready()
+    </script>
+
+
+
+</body>
+</html>
