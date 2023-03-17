@@ -33,7 +33,7 @@ body {
 header, section {
 	background:black;
 	padding:25px;
-	color:white;
+	color:#F7F4EF;
 }
 
 header {
@@ -46,11 +46,28 @@ header {
   
 }
 
+header h1{
+	color:#F7F4EF;
+    background-color: #53565A;
+	line-height: 100px;
+	padding: 25px;
+}
+
 section p{
    border-style:solid;
    border-color: lightgoldenrodyellow;
    border-radius: 1rem;
    padding: 20px;
+}
+
+.foot{
+    padding: 20px;
+	background-color: #53565A;
+
+}
+
+.foot p{
+	color:#F7F4EF;
 }
 
 /* The three div's with cat background images */
@@ -90,6 +107,7 @@ section p{
 	top:50%;
 	margin-left:-182px;
 	margin-top:-70px;
+	text-align: center;
 }
 
 
@@ -100,7 +118,7 @@ section p{
 
 @keyframes changes {
 	from {opacity:1;}
-	to {opacity:0.65;}
+	to {opacity:0.5;}
 }
 
 
