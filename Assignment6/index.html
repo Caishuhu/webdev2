@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<!-- This matches the CSS width to the device width, and prevents forced overview without disabling zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 
+	<title>Scrolling Effects Demo</title>
+	
+	<link rel="stylesheet" href="style.css">	
+	
+</head>
+
+
+<body>
+
+  <div id="container">
+
+
+<header>
+  <h1>THEY SAY</h1>
+  </header>
+  
+  <div id="pic1"></div>
+  
+<section id="one">
+  <p > It's been a long time since I've been confused and hurt by other people's words, especially from those close to me. I fell into a circle of emotional strangeness, became sensitive and lacked confidence. Sometimes it's easy to overlook the impact of words, not least because we've become more apathetic since the advent of social media. But we are not wood or stone, we are human beings with natural feelings. </p>
+  </section>
+ 
+
+
+    <div id="pic2"><!--<p>***Brief message***</p>-->
+    <h1>ONEDAY</h1>
+    
+    </div>
+
+    <section id="two">
+  
+    <p >So, my project will be in the form of a short black-and-white video that explores the connection between what we others say and what we feel through a lot of use of words with effects.  I tried some motion in After Effects and a cover in Photoshop. These motions make a scene for us to break, these fragments of your inner soul. With these usages, the words become more vivid and more visual fragmentation is added. I want the media to mirror the chaotic and destructive feelings that we have when others speak these violet words to us.</p>
+    </section>
+    
+      <div id="pic3"></div>
+   
+    
+
+     <div class="foot"><p>&copy;CAISHU HU 2023</p></div>
+
+  </div><!-- close "container" -->
+  
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <!-- Container for your jQuery code -->
+  <script>
+$(document).ready(function() {
+
+//allow scroll detection in realtime
+$(window).scroll(function() {
+
+	//This will detect how far the top of the window is from the top of the document
+	var windowPosition = $(window).scrollTop();
+	
+	
+	
+	/*
+	if (windowPosition>1500) {
+	$('section').css('background','red');
+	} else {
+	$('section').css('background','black');
+	} //close if statement
+	*/
+	
+	//An alternate approach, but with a nice CSS animation
+	if (windowPosition>1500) {
+		$('section').addClass('red');
+	} else {
+		$('section').removeClass('red');
+	}//close if/else statement
+
+
+
+
+
+	//detect position of particular element to trigger a function
+	var elementOffset = $('#one').offset().top;
+	var currentElementOffset = (elementOffset - windowPosition);
+	
+	if (currentElementOffset<40) {
+		$('#pic2 h1').toggle();
+	} else {
+		$('#pic2 h1').fadeToggle();
+	}//close if/else statement
+
+    if (currentElementOffset<40) {
+            $('#pic3').hide(1800);
+        } else {
+            $('#pic3').show(1000);
+        }
+	
+	
+});// close .scroll
+
+
+
+}); //close .ready()
+</script>
+
+</body>
+	
+</html> 
