@@ -8,112 +8,97 @@
 * {
     margin: 0;
     padding:0;
-    box-sizing: border-box;
-  }
-
-body{
- 
-  background-image: url(img/bg.gif);
-  
 }
 
 
 header{
   font-family: 'DM Serif Display', serif;
- 
   text-align:center;
+  background-color: #8F916B;
+  padding: 6rem;
 }
 
-header img{
-  width:100%;
 
-  margin:0;
-}
 
-h1{
- color:#404a7a;
-
-  margin-top: 1.5rem;
+h1,h2 {
+ color:#EDEAD7;
 }
 
 h2{
-  color:#404a7a;
-  margin-top: 1rem;
+  
+  text-decoration-line: underline;
+  text-decoration-color: #DE908D;
+  text-decoration-style:dotted;
+  text-underline-position: below;
 }
+
+
+
   nav ul{
     list-style:none;
+    text-align: center;
+
   }
 
-  figure img{
-    width:100%;
-    border-radius:10px;
-    max-width:400px;
-    flex-grow:1;
-    flex-basis:60%;
+  li{
+    
+    border-style: solid;
+    border-color:#DE908D;
+    border-width: .15rem;
+    
+    margin: 0.75rem;
+    padding: .45rem;
+    min-width: 5rem;
+    display:inline-flex;
+    flex-direction: column wrap;
+     justify-content: center;
+     align-items: center;
   }
+
+  li:hover{
+    
+    background-color:#DE908D;
+  }
+
 
 
  .container{
-  padding: 2rem;
-  background-color:#f8f0fe;
-  border-radius: 15px;
-  margin:3rem;
-
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  gap:5rem;
   
+  background-color:#EDEAD7;
+  padding: 5rem;
 
- }
-
- nav{
-  flex:1;
-  margin-left: 4rem;
- }
-
- main{
-  flex:2;
-  margin-left: 4rem;;
  }
  
- .container p {
-  line-height:1.5;
-  
-  
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 30%;
-  min-width: 10rem;
-}
+
 
 
 .center{
-  max-width:55rem;
+  
   margin:0 auto;
-
-
 }
 
 p{
-  color:#404a7a;
+  color:#735141;
   font-family:  'Alata', sans-serif;
 }
+
 a{
-  color:#4b3108;
+  color:#735141;
 }
 
-
-a:hover{
-  color:#845f4b;
-}
 footer{
   text-align: center;
-  color: #404a7a;
-  font-family:  'Alata', sans-serif;
+  color:#EDEAD7;
+  background-color: #8F916B;
+  padding: 4rem;
+  font-family: 'DM Serif Display', serif ;
 }
 
 nav{
   font-family:  'Alata', sans-serif;
+  
+}
 
+nav a{
+  text-decoration-line: none;
 }
