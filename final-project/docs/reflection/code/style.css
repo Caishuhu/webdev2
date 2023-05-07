@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+header{
+    min-width: 40rem;
+}
+
+ul {
+   color:deeppink;
+   list-style: none;
+    display: flex;
+   
+
+}
+
+ul a img{
+    width:1rem;
+}
+
+ul a {
+    text-decoration-line: none;
+    margin-right: 2rem;
+
+}
+
