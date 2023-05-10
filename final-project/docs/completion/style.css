@@ -1,0 +1,204 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400;600&family=Taviraj:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding:0;
+
+}
+
+html {
+scroll-behavior: smooth;
+font-size: 1em;
+line-height: 1.5em;
+
+}
+
+body{
+    background-color: #403d39;
+   
+    
+   
+}
+
+.center{
+    margin:0 auto;
+}
+
+header{
+    margin:auto;
+    min-width: 40rem;
+    min-height:50rem;
+    background-image: url(pic/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color:coral;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+h1, h2{
+    
+    text-align: center;
+    height: 3rem;
+    font-family:'Abril Fatface', cursive; 
+    
+}
+
+h3{
+    font-family: 'Cinzel', serif;
+    color:antiquewhite;
+    background-color:lightslategray;
+    width:150px;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity:.95;
+    margin-bottom: .75rem;
+    
+}
+
+ul{
+    display:flex;
+    list-style: none;
+    position: fixed;
+    top:0;
+    right:0;
+    margin-top: 3rem;
+    margin-right: 3rem;
+
+}
+
+ul a {
+    text-decoration-line: none;
+    margin-right: 1rem;
+    color:black;
+    background-color:antiquewhite;
+    padding: 1rem;
+    border-radius: 2.25rem;
+    font-family: 'Taviraj', serif;
+    opacity: .85;
+    
+}
+
+ul a:hover{
+  opacity: 1;
+}
+
+.homebutton img{
+    padding: 1rem;
+    position: absolute;
+    width:1.5rem;
+    margin-left: 3rem;
+    margin-top:1.5rem;
+    background-color: antiquewhite;
+    border-radius: 3rem ;
+}
+
+
+.container{
+    margin:0 auto;
+    flex-direction: column;
+    line-height: 1.5rem;
+    color:antiquewhite;
+    font-family: 'Taviraj', serif;
+    background-image: url(pic/circle0.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    border-radius: .75rem;
+
+}
+
+
+.intro{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    
+}
+
+.reflection{
+   
+   padding: 2rem;
+   margin-bottom:5rem;
+}
+
+.content{
+    display:none;
+} /* for hidding the part of contents */
+
+#hide{
+    display: none;
+}
+
+
+#hide:checked ~ .content{
+    display: block;
+}
+
+#hide:checked ~ label{
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    color:black;
+    background-color:thistle;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 12px;
+
+}
+
+label:hover{
+    transform: scale(1.25);
+}
+.content2{
+    display:none;
+}
+
+#hide2{
+    display: none;
+}
+
+
+#hide2:checked ~ .content2{
+    display: block;
+}
+
+#hide2:checked ~ label{
+    display: none;
+}
+
+label2 :hover{
+    transform: scale(1.25);
+}
+footer{
+     padding: 5rem;
+     text-align: center;
+     color:coral;
+     font-size: 1.5rem;
+     font-family:'Abril Fatface', cursive; 
+     background-image: url(pic/bgggg.jpeg);
+     background-repeat: repeat;
+    
+     
+
+}
+
+@media all and (min-width: 769px) {
+	 .container {
+		width:80%;
+        display:block;
+	}
+
+    
+}
