@@ -25,6 +25,7 @@ body{
    
     position:fixed;
     background-color:darksalmon;
+    z-index:999;
     transition:200ms ease;
  }
   
@@ -134,7 +135,6 @@ h3{
 
 #container{
     margin:7rem;
-
     flex-direction: column;
     line-height: 1.5rem;
     color:antiquewhite;
