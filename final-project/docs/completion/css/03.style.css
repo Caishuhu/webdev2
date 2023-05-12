@@ -1,0 +1,218 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400;600&family=Taviraj:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    color:rgba(255, 106, 0, 0.936);
+    background-color:bisque;
+}
+
+
+.navbar{
+   
+   
+   position:fixed;
+   background-color:darksalmon;
+   transition:200ms ease;
+}
+ 
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.nav-item :last-child{
+    margin-top: auto;
+}
+
+.nav-link{
+  display: flex;
+  align-items: center;
+  height:4rem;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  filter: grayscale(50%) opacity(0.5);
+  transition:200ms ease;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background-color:tomato;
+    color:honeydew;
+}
+
+.link-text{
+    display:none;
+    margin-left: 0.5rem;
+    color:antiquewhite;
+    text-transform: uppercase;
+    
+}
+
+
+.nav-link img{
+    min-width:2rem;
+    margin:0 1.5rem;
+}
+
+
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+
+
+
+
+h1, h3{
+    margin-left:4rem;
+    text-align: center;
+}
+
+h1,h4{
+    font-family:'Abril Fatface', cursive; 
+}
+
+h3{
+    font-family: 'Taviraj', serif;
+    font-size: 1rem;
+    font-weight: 80;
+    padding: 1rem;
+}
+
+h4{
+    color:rgb(123, 70, 0);
+}
+
+main{
+ margin-top: 5rem;
+
+ line-height: 1.5rem;
+
+}
+
+
+figure img{
+    max-width: 500px;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /*To center an image, set left and right margin to auto and make it into a block element. */
+}
+
+figure p{
+    text-transform: uppercase;
+    text-align: center;
+    opacity:.8;
+}
+
+section{
+    margin: 4rem;
+    padding: 3rem;
+  
+    background-color:burlywood;
+  
+    
+}
+
+section p{
+    margin-bottom: 2rem;
+    font-family: 'Taviraj', serif;
+}
+
+strong{
+    font-size: 2.5rem;
+}
+
+b{
+   color:rgb(0, 131, 131);
+}
+
+.side1{
+    width: 30%;
+    padding: 16px;
+    margin-left: 20px;
+    float: right;
+    font-style: italic;
+    background-color:rgb(255, 188, 106);
+    
+}
+
+.side2{
+    width: 30%;
+    padding: 16px;
+    margin-right: 20px;
+    float: left;
+    font-style: italic;
+    background-color:rgb(255, 188, 106);
+}
+
+
+
+
+@media only screen and (min-width:769px) {
+   
+    .navbar{
+        top:0;
+        width:5rem;
+        height:100vh;
+    }
+    
+   .navbar:hover{
+    width:16rem; 
+   }
+  .navbar:hover .link-text{
+    display:inline;
+    transition:200ms ease;
+}
+
+}
+
+@media only screen and (max-width:769px) {
+   
+    .link-text{
+        display: none;
+        
+    }
+
+    .navbar{
+        bottom:0;
+        width:100vw;
+        height:4rem;
+    }
+    
+    .navbar-nav{
+        flex-direction: row;
+
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+   
+
+
+  .nav-link img{
+    max-width:1.5rem;
+    margin:0 1.75rem;
+}
+
+
+
+    main{
+        margin:0;
+    }
+
+    
+}
